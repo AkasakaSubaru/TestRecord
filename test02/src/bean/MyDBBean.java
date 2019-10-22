@@ -23,7 +23,7 @@ public class MyDBBean implements Serializable{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		    Connection conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:8889/test?user=root&password=root");
+					"jdbc:mysql://localhost:0000/test?user=root&password=root");
 		    Statement state = conn.createStatement();
 		    String sql = "SELECT * FROM users, test_num WHERE users.id = test_num.id AND users.id = '" + id + "' AND users.pw='" + pw + "'";
 		    ResultSet rs = state.executeQuery(sql);
