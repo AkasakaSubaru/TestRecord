@@ -4,7 +4,7 @@ This program can add test data.But It can't delete it.
 So, this progaram can add only.
 
 # Code Description
-This program useing MVC model.
+This program using MVC model.
 
 M:Java
 
