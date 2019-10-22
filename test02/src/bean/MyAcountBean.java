@@ -15,7 +15,7 @@ public class MyAcountBean implements Serializable{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:8889/test?user=root&password=root");
+					"jdbc:mysql://localhost:0000/test?user=root&password=root");
 			state = conn.createStatement();
 			String sql = "INSERT INTO users (id,pw,name) VALUES ('"+ id + "','" + pw + "','" + name + "')";
 			state = conn.prepareStatement(sql);
