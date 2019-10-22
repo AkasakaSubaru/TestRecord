@@ -18,7 +18,7 @@ public class MyTestBean implements Serializable{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:8889/test?user=root&password=root");
+					"jdbc:mysql://localhost:0000/test?user=root&password=root");
 			state = conn.createStatement();
 			    if(id == "No ID") {    //idの入力がない場合
 				    String sql = "SELECT id FROM users WHERE pw='" + pw +  "'";
